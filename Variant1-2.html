@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#image").mouseenter(function() {
+				$(this).hide();
+			});
+		});
+	</script>
+  </head>
+  <body> 
+	<p>Если наведете курсор на картинку, - она исчезнет!</p><br>
+	<img id="image" src="landscape.jpg" width="160" height="120">
+  </body>                         
+</html>
