@@ -4,21 +4,21 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script>
 		$(document).ready(function() {
-			$("#image").mouseenter(function() {
+			$("td>img").mouseenter(function() {
 				$(this).hide();
 			});
 		});
 	</script>
   </head>
   <body> 
-	<h3 align="center">Если наведете курсор на нужную картинку, - она исчезнет!</h3>
+	<h3 align="center">Если наведете курсор на картинку в таблице, - она исчезнет!</h3>
 	<table align="center" width="200" border="1" cellpadding="5">
 		<tr align="center"><td><b>№</b><td><b>Картинка</b><td><b>Описание</b></td></tr>
 		<tr align="center"><td>1<td><img src="river.jpg" width="200"><td width="300">Очень красивая река</td></tr>
 		<tr align="center"><td>2<td><img src="forest.jpg" width="200"><td>Прекрасный лес</td></tr>
-		<tr align="center"><td>3<td><img id="image" src="lake.jpg" width="200"><td>Великолепное озеро</td></tr>
+		<tr align="center"><td>3<td><img src="lake.jpg" width="200"><td>Великолепное озеро</td></tr>
 	</table>
 	<h3 align="center">А эта картинка вне таблицы:</h3>
-	<p align="center"><img src="landscape.jpg"><br>Может она исчезнет?</p>
+	<p align="center"><img src="landscape.jpg"><br>И она не исчезает!</p>
   </body>                         
 </html>
